@@ -1,67 +1,139 @@
-body{
-    margin: 0px;
-    font-family: 'Bona Nova', serif;
-}
-h1{
-    font-size: 70px;
-
-}
-.or{
-    color: rgb(255, 13, 4);
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Bona Nova', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
-.w{color:rgb(21, 1, 26);size: 20px; size: 100px;}
-h2{size:50px;}
-.flex{display: flex;margin-bottom: 200px;}
-
-.half-width{width: 50%; padding-left: 2%;}
-
-.half-width img{width:70%;}
-
-
-.half-width{color: rgb(0, 150, 250);}
-
-       .B{color: rgb(245, 245, 248); text-align: center; padding: 12px;
-        text-decoration: none; border-radius: 5px;  
-        background-color: rgb(102, 168, 3); font-weight: 520;
-        background-image: linear-gradient(rgb(0, 68, 255), rgb(99, 26, 184));
-        scroll-padding:tomato ;  scroll-padding-bottom: 5px; position: relative;top: 50px;;
-    }
-    .Top-bannar{ background-image: url(images/top-banner.png); background-repeat:no-repeat ;}
-    
-    .i{width: 50%; padding-left: 2%;}
-    .B1{color: rgb(245, 245, 248); text-align: center; padding: 12px;
-        text-decoration: none; border-radius: 5px;  
-        background-color: rgb(102, 168, 3); font-weight: 520;
-        background-image: linear-gradient(rgb(255, 0, 0), rgb(99, 26, 184));
-        scroll-padding:tomato ;  scroll-padding-bottom: 5px; position: relative;top: 50px;}
-    .the-undead{background-image: url(images/dream-bg.png);background-repeat: no-repeat;background-position: right;position: static;}
-
-    .orange{color: orange;}
-    .boxshaddo{
-        box-shadow:10px 10px 40px grey;
-        width: 50%;
-        margin-left:4%;
-        margin-right:4%; 
-        padding-left: 20px;
-        border-radius: 3px;
-      
-    }
-    .experience-area{
-        background-image: url(images/exp-bg.png);
-        background-repeat: no-repeat;
-        background-position: left;
-    }
-    #border1{
-        border-left: 7px solid;
-        border-image:linear-gradient(blue, cyan) ;
-        border-image-slice: 1;
-    }
-    #border2{ border-left: 7px solid;
-        border-image:linear-gradient(rgb(147, 255, 6), rgb(238, 223, 16)) ;
-        border-image-slice: 1;
+h1 {
+    font-size: 60px;
+    margin-top: 0;
+    line-height: 1.1;
 }
-    footer p {
-        text-align:center;
-    }
-    
+
+.or {
+    color: #00B150; /* LitterPin green */
+}
+
+.w {
+    color: #2c3e50;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.flex-wrap {
+    align-items: stretch;
+}
+
+.half-width {
+    width: 50%; 
+    padding: 2%;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.B, .B1 {
+    color: #fff; 
+    text-align: center; 
+    padding: 12px 30px;
+    text-decoration: none; 
+    border-radius: 8px;  
+    background-color: #00B150; 
+    font-weight: 600;
+    transition: transform 0.2s, background-color 0.2s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.B:hover, .B1:hover {
+    background-color: #008a3e;
+    transform: translateY(-2px);
+}
+
+.Top-bannar { 
+    padding-top: 100px;
+    background-image: url('images/top-banner.png'); 
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+.i {
+    width: 50%; 
+    padding-left: 2%;
+}
+
+.the-undead {
+    background-image: url('images/dream-bg.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-top: 100px;
+}
+
+.orange {
+    color: #f39c12;
+}
+
+.boxshaddo {
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    width: 46%;
+    margin: 2%;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.experience-area {
+    background-image: url('images/exp-bg.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-top: 100px;
+}
+
+#border1 {
+    border-top: 5px solid #00B150;
+}
+
+#border2 {
+    border-top: 5px solid #3498db;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 30px 0;
+    margin-top: 100px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    color: #00B150;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
