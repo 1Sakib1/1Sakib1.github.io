@@ -2,82 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nazmus Sakib - Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Using Inter for a very modern, clean look similar to top-tier SPAs -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="Top-bannar flex">
-    <div class="half-width">
-        <h1>Hi, I'm </h1>                                                  
-        <h1><span class="or">Nazmus Sakib</span></h1>
-        
-        <h2 class="w"><span style="font-size: 35px;">Information Technology Student & Developer</span></h2>
-        <p class="p1" style="font-weight: 550;"><span style="font-size: 20px;">
-            Motivated and detail-oriented Information Technology student at Victoria University with strong communication, problem-solving, and leadership skills. Passionate about software development, web technologies, and AI-powered solutions.
-        </span></p>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">NS.</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+            <a class="btn-primary nav-btn" target="_blank" href="https://www.linkedin.com/in/sakib-nazmus-2b7534211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQeA8KCs2SA6hGmy1jRXiqw%3D%3D">Connect</a>
+        </div>
+    </nav>
 
-        <a class="B" target="_blank" href="https://www.linkedin.com/in/sakib-nazmus-2b7534211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQeA8KCs2SA6hGmy1jRXiqw%3D%3D">My LinkedIn</a>
-    </div>
-    <div class="half-width image-container">
-        <img src="images/profile.jpeg" alt="Nazmus Sakib">
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <header class="hero" id="about">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="badge">Information Technology Student</span>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Nazmus Sakib</span></h1>
+                <p class="hero-desc">
+                    Motivated and detail-oriented student at Victoria University. I specialize in building modern, scalable software solutions with a passion for web technologies and AI-powered platforms.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="https://github.com/1Sakib1" target="_blank" class="btn-secondary">GitHub</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="image-bg-shape"></div>
+                <img src="images/profile.jpeg" alt="Nazmus Sakib" class="hero-image">
+            </div>
+        </div>
+    </header>
 
-  <section class="the-undead flex">
-    <div class="half-width image-container" style="padding-right: 5%;">
-        <img src="images/top-banner.png" alt="Decorative background" style="border-radius: 20px;">
-    </div>
-    <div class="i">
-        <h1>Education & Skills</h1>
-        <h2>Building the Future</h2>
-        <p style="font-size: 18px; line-height: 1.6;">
-            <b>Bachelor of Information Technology</b><br>
-            Victoria University, Sydney Australia (Class of 2026)<br><br>
+    <!-- Skills & Education Section -->
+    <section class="section bg-light" id="skills">
+        <div class="section-content">
+            <div class="section-header">
+                <h2>Education & <span class="highlight">Skills</span></h2>
+                <p>Building the foundation for the future of tech.</p>
+            </div>
             
-            <b>Technical Skills:</b><br>
-            • <i>Programming:</i> Python, C++, Java, Bash, PHP<br>
-            • <i>Web Development:</i> HTML, CSS, Bootstrap, React<br>
-            • <i>Database & Cloud:</i> MySQL, Microsoft Azure, Hyper-V, VMware<br>
-            • <i>Networking:</i> Cisco Networking Technologies (Packet Tracer, Routing, Switching, OSPF, VLANs)<br>
-            • <i>Tools:</i> Android Studio, Git, Figma, Postman, Arduino
-        </p>
-    </div> 
-  </section>
+            <div class="grid-2">
+                <!-- Education Card -->
+                <div class="card education-card">
+                    <div class="card-icon">🎓</div>
+                    <h3>Victoria University</h3>
+                    <h4 class="card-subtitle text-muted" style="margin-bottom: 1rem;">Bachelor of Information Technology</h4>
+                    <p style="font-weight: 500;">Sydney, Australia • Class of 2026</p>
+                    <p class="card-text">
+                        Focused on software engineering, network infrastructure, and modern web development. Eager to contribute technical and interpersonal strengths in a dynamic workplace.
+                    </p>
+                </div>
 
-  <section class="experience-area"> 
-      <h1 style="text-align: center; margin-bottom: 50px;">Featured Work & Experience</h1>
-      <div class="flex flex-wrap">
-          <div class="boxshaddo" id="border1"> 
-              <h1>LitterPin</h1>
-              <h2 class="orange">AI-Powered Environmental Tracking</h2>
-              <p style="font-size: 17px; line-height: 1.5;">
-                  Founder / Developer of <a href="https://litterpin.org" target="_blank">LitterPin.org</a>. LitterPin empowers communities to track, report, and analyze environmental waste in real-time. Earn eco-points, leverage AI waste classification, and visualize global pollution hotspots on an interactive 3D globe.
-              </p>
-              <br>
-              <a href="https://litterpin.org" target="_blank" class="B1" style="display:inline-block; margin-top: 10px;">Visit LitterPin</a>
-          </div>
-          <div class="boxshaddo" id="border2">
-              <h1>Professional Experience</h1>
-              <h2 class="orange">Leadership & Support</h2>
-              <p style="font-size: 17px; line-height: 1.5;">
-                  • <b>Safety and First Aid Officer</b> @ UNSW Main Library<br>
-                  • <b>Student Mentor / IT Service Desk</b> @ Victoria University<br>
-                  • <b>Risk Management Supervisor</b> @ The Friends Experience Sydney<br>
-                  • <b>Customer Service Assistant</b> @ Coles Supermarkets<br>
-                  <br>
-                  Demonstrated ability to thrive in fast-paced environments, coordinate teams, manage emergency protocols, and deliver responsive customer service and IT support.
-              </p>
-          </div>
-      </div>
-  </section>
+                <!-- Skills List -->
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4>💻 Programming</h4>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Bash</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>🌐 Web & Cloud</h4>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">VMware</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>🔧 Tools & Networking</h4>
+                        <div class="tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Postman</span>
+                            <span class="tag">Cisco (OSPF, VLANs)</span>
+                            <span class="tag">Arduino</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-      <p>© 2026 Nazmus Sakib. All rights reserved.</p>
-  </footer>
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-content">
+            <div class="section-header">
+                <h2>Featured <span class="highlight">Projects</span></h2>
+                <p>Real-world solutions driving community impact.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <span class="badge badge-green">Live Project</span>
+                    <h3>LitterPin</h3>
+                    <p class="project-desc">
+                        Founder & Developer of an AI-powered environmental tracking platform. LitterPin empowers communities to track, report, and analyze environmental waste in real-time. Users earn eco-points, leverage AI waste classification, and visualize global pollution hotspots on an interactive 3D globe.
+                    </p>
+                    <a href="https://litterpin.org" target="_blank" class="btn-primary">Visit LitterPin.org</a>
+                </div>
+                <div class="project-visual">
+                    <!-- A styled placeholder block that looks like an app mockup -->
+                    <div class="mockup">
+                        <div class="mockup-header">
+                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        </div>
+                        <div class="mockup-body">
+                            <h2 style="color:#00B150; font-size: 2rem; margin-bottom:10px;">LitterPin</h2>
+                            <p style="color: #64748b;">AI-Powered Environmental Tracking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section bg-light" id="experience">
+        <div class="section-content">
+            <div class="section-header">
+                <h2>Professional <span class="highlight">Experience</span></h2>
+                <p>Leadership, support, and fast-paced coordination.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>Safety and First Aid Officer</h3>
+                        <h4 class="text-muted" style="margin-bottom: 0.5rem;">UNSW Main Library • Sept 2025 - Present</h4>
+                        <p style="margin: 0;">Maintain safety of library assets, execute opening/closing procedures, and act as primary responder for first aid emergencies. Provide responsive customer service.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>Student Mentor & IT Service Desk</h3>
+                        <h4 class="text-muted" style="margin-bottom: 0.5rem;">Victoria University • Nov 2024 - Jul 2025</h4>
+                        <p style="margin: 0;">Provided peer mentoring and orientation support. Handled admin duties, addressed service desk queries, directed IT support, and acted as a liaison for the Student Representative Group.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>Risk Management Supervisor</h3>
+                        <h4 class="text-muted" style="margin-bottom: 0.5rem;">The Friends Experience Sydney • Jan 2025 - May 2025</h4>
+                        <p style="margin: 0;">Managed visitor safety and emergency protocols during the Warner Brothers Studios exhibition. Coordinated closely with team members to ensure smooth daily operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Let's build something <span class="highlight">great.</span></h2>
+            <p style="margin-bottom: 0; color: #cbd5e1;">nazmus.sakib@live.vu.edu.au</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/sakib-nazmus-2b7534211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQeA8KCs2SA6hGmy1jRXiqw%3D%3D" target="_blank">LinkedIn</a>
+                <a href="https://github.com/1Sakib1" target="_blank">GitHub</a>
+                <a href="https://litterpin.org" target="_blank">LitterPin</a>
+            </div>
+            <p class="copyright">© 2026 Nazmus Sakib. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
