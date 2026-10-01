@@ -6,20 +6,22 @@
     <title>Nazmus Sakib - Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Using Inter for a very modern, clean look similar to top-tier SPAs -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Inter for readability, Space Mono for the Watch Dogs hacker aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="scanlines"></div>
+    
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">NS.</div>
+            <div class="logo glitch-hover" data-text="NS_SYS.">NS_SYS.</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#about" class="glitch-hover" data-text="About">About</a></li>
+                <li><a href="#skills" class="glitch-hover" data-text="Skills">Skills</a></li>
+                <li><a href="#projects" class="glitch-hover" data-text="Projects">Projects</a></li>
+                <li><a href="#experience" class="glitch-hover" data-text="Experience">Experience</a></li>
             </ul>
             <a class="btn-primary nav-btn" target="_blank" href="https://www.linkedin.com/in/sakib-nazmus-2b7534211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQeA8KCs2SA6hGmy1jRXiqw%3D%3D">Connect</a>
         </div>
@@ -29,14 +31,14 @@
     <header class="hero" id="about">
         <div class="hero-content">
             <div class="hero-text">
-                <span class="badge">Information Technology Student</span>
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Nazmus Sakib</span></h1>
+                <span class="badge">> STATUS: IT_STUDENT_ONLINE</span>
+                <h1 class="hero-title">Hi, I'm <br><span class="highlight glitch-hover" data-text="Nazmus Sakib">Nazmus Sakib</span></h1>
                 <p class="hero-desc">
-                    Motivated and detail-oriented student at Victoria University. I specialize in building modern, scalable software solutions with a passion for web technologies and AI-powered platforms.
+                    Motivated and detail-oriented student at Victoria University. I specialize in building scalable software solutions with a passion for web technologies and AI-powered platforms.
                 </p>
                 <div class="hero-actions">
-                    <a href="#projects" class="btn-primary">View My Work</a>
-                    <a href="https://github.com/1Sakib1" target="_blank" class="btn-secondary">GitHub</a>
+                    <a href="#projects" class="btn-primary">Execute: View Work</a>
+                    <a href="https://github.com/1Sakib1" target="_blank" class="btn-secondary">GitHub_Repo</a>
                 </div>
             </div>
             <div class="hero-image-wrapper">
@@ -50,8 +52,8 @@
     <section class="section bg-light" id="skills">
         <div class="section-content">
             <div class="section-header">
-                <h2>Education & <span class="highlight">Skills</span></h2>
-                <p>Building the foundation for the future of tech.</p>
+                <h2 class="glitch-hover" data-text="Education & Skills">Education & <span class="highlight">Skills</span></h2>
+                <p>> Loading technical capabilities...</p>
             </div>
             
             <div class="grid-2">
@@ -69,7 +71,7 @@
                 <!-- Skills List -->
                 <div class="skills-container">
                     <div class="skill-category">
-                        <h4>💻 Programming</h4>
+                        <h4>[SYS.PROG]</h4>
                         <div class="tags">
                             <span class="tag">Python</span>
                             <span class="tag">C++</span>
@@ -79,7 +81,7 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>🌐 Web & Cloud</h4>
+                        <h4>[NET.WEB_CLOUD]</h4>
                         <div class="tags">
                             <span class="tag">React</span>
                             <span class="tag">HTML/CSS</span>
@@ -89,7 +91,7 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>🔧 Tools & Networking</h4>
+                        <h4>[CFG.TOOLS]</h4>
                         <div class="tags">
                             <span class="tag">Git</span>
                             <span class="tag">Figma</span>
@@ -107,28 +109,27 @@
     <section class="section" id="projects">
         <div class="section-content">
             <div class="section-header">
-                <h2>Featured <span class="highlight">Projects</span></h2>
-                <p>Real-world solutions driving community impact.</p>
+                <h2 class="glitch-hover" data-text="Featured Projects">Featured <span class="highlight">Projects</span></h2>
+                <p>> Decrypting portfolio assets...</p>
             </div>
 
             <div class="project-card">
                 <div class="project-info">
-                    <span class="badge badge-green">Live Project</span>
-                    <h3>LitterPin</h3>
+                    <span class="badge badge-primary">LIVE_DEPLOYMENT</span>
+                    <h3 class="glitch-hover" data-text="LitterPin">LitterPin</h3>
                     <p class="project-desc">
                         Founder & Developer of an AI-powered environmental tracking platform. LitterPin empowers communities to track, report, and analyze environmental waste in real-time. Users earn eco-points, leverage AI waste classification, and visualize global pollution hotspots on an interactive 3D globe.
                     </p>
-                    <a href="https://litterpin.org" target="_blank" class="btn-primary">Visit LitterPin.org</a>
+                    <a href="https://litterpin.org" target="_blank" class="btn-primary">Launch litterpin.org</a>
                 </div>
                 <div class="project-visual">
-                    <!-- A styled placeholder block that looks like an app mockup -->
                     <div class="mockup">
                         <div class="mockup-header">
                             <span class="dot"></span><span class="dot"></span><span class="dot"></span>
                         </div>
                         <div class="mockup-body">
-                            <h2 style="color: var(--primary); font-size: 2rem; margin-bottom:10px;">LitterPin</h2>
-                            <p style="color: #64748b;">AI-Powered Environmental Tracking</p>
+                            <h2 style="color: var(--primary); font-size: 2rem; margin-bottom:10px;" class="glitch-hover" data-text="LitterPin">LitterPin</h2>
+                            <p style="color: #64748b; font-family: 'Space Mono', monospace;">AI-Powered Environmental Tracking</p>
                         </div>
                     </div>
                 </div>
@@ -140,8 +141,8 @@
     <section class="section bg-light" id="experience">
         <div class="section-content">
             <div class="section-header">
-                <h2>Professional <span class="highlight">Experience</span></h2>
-                <p>Leadership, support, and fast-paced coordination.</p>
+                <h2 class="glitch-hover" data-text="Professional Experience">Professional <span class="highlight">Experience</span></h2>
+                <p>> Parsing operational history...</p>
             </div>
 
             <div class="timeline">
@@ -176,12 +177,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <h2>Let's build something <span class="highlight">great.</span></h2>
-            <p style="margin-bottom: 0; color: #cbd5e1;">nazmus.sakib@live.vu.edu.au</p>
+            <h2 class="glitch-hover" data-text="Let's build something great.">Let's build something <span class="highlight">great.</span></h2>
+            <p style="margin-bottom: 0; color: #cbd5e1; font-family: 'Space Mono', monospace;">> contact: nazmus.sakib@live.vu.edu.au</p>
             <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/sakib-nazmus-2b7534211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQeA8KCs2SA6hGmy1jRXiqw%3D%3D" target="_blank">LinkedIn</a>
-                <a href="https://github.com/1Sakib1" target="_blank">GitHub</a>
-                <a href="https://litterpin.org" target="_blank">LitterPin</a>
+                <a href="https://www.linkedin.com/in/sakib-nazmus-2b7534211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQeA8KCs2SA6hGmy1jRXiqw%3D%3D" target="_blank" class="glitch-hover" data-text="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/1Sakib1" target="_blank" class="glitch-hover" data-text="GitHub">GitHub</a>
+                <a href="https://litterpin.org" target="_blank" class="glitch-hover" data-text="LitterPin">LitterPin</a>
             </div>
             <p class="copyright">© 2026 Nazmus Sakib. All rights reserved.</p>
         </div>
